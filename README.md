@@ -4,16 +4,19 @@ jcautosave by http://jaspreetchahal.org/
 A simple jQuery AutoSave Plugin for Form Fields Or ContentEditable Containers
 
 <h2>Example Markup</h2>
-
+<pre><code>
 &lt;div contenteditable="true" id="autosave" style="width:250px;height: 250px; padding: 5px; border: 1px solid #EEEEEE;border-radius: 10px" data-url="example.html" data-event="keyup">&lt;/div>
+
 &lt;div id="message" style="width:250px">&lt;/div>
+
 &lt;input id="name"  data-url="example.html" data-event="change" >
+
 &lt;div id="message-name" style="width:250px">&lt;/div>
 
-<pre><code>
+</code></pre>
 
 <h2>Example Usage</h2>
-
+<pre><code>
 $("#autosave").jcautosave({
         sendAutoSaveOn:"interval",
         interval:10000, // 10 seconds
